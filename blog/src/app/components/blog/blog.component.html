@@ -1,0 +1,13 @@
+<div class="container">
+  <div class="row">
+    <div class="col-md-4" *ngFor="let item of items$ | filter:filterText">
+      <div class="card">
+        <blog-item
+          [image]="item.image"
+          [text]="item.text"
+          [id]="item.id">
+        </blog-item>
+      </div>
+    </div>
+  </div>
+</div>
